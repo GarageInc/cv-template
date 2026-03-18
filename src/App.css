@@ -1,20 +1,13 @@
-/* ─── Variables ─── */
+/* ─── Document-style Resume ─── */
 :root {
+  --color-text: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #6b7280;
+  --color-border: #d1d5db;
+  --color-border-light: #e5e7eb;
+  --color-accent: #1d4ed8;
   --color-bg: #ffffff;
-  --color-bg-alt: #f8fafc;
-  --color-text: #1e293b;
-  --color-text-secondary: #64748b;
-  --color-text-muted: #94a3b8;
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
-  --color-accent-light: #eff6ff;
-  --color-accent-border: #bfdbfe;
-  --color-border: #e2e8f0;
-  --color-card: #ffffff;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --radius: 8px;
-  --max-width: 860px;
+  --max-width: 800px;
 }
 
 /* ─── Reset ─── */
@@ -28,727 +21,520 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 3.5rem;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Georgia', 'Times New Roman', serif;
   color: var(--color-text);
-  background: var(--color-bg);
-  line-height: 1.65;
+  background: #f3f4f6;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
 a {
   color: var(--color-accent);
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--color-accent-hover);
+  text-decoration: underline;
 }
 
-/* ─── Header ─── */
+/* ─── Page wrapper ─── */
+.resume-page {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 3rem 3.5rem;
+}
+
+/* ─── Header bar (sticky nav) ─── */
 .header {
   position: sticky;
   top: 0;
   z-index: 100;
+  max-width: var(--max-width);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.75rem 2rem;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
+  padding: 0.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--color-border);
+  border-bottom: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .header-logo {
-  font-weight: 800;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: 0.9rem;
   color: var(--color-text);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .header-logo:hover {
   color: var(--color-accent);
+  text-decoration: none;
 }
 
 .header-nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .header-nav a {
-  color: var(--color-text-secondary);
-  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
   font-weight: 500;
-  transition: color 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .header-nav a:hover {
   color: var(--color-text);
+  text-decoration: none;
 }
 
 .export-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
   background: var(--color-accent);
   color: #fff;
   border: none;
-  border-radius: var(--radius);
-  font-size: 0.875rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background 0.15s;
 }
 
 .export-btn:hover:not(:disabled) {
-  background: var(--color-accent-hover);
-  transform: translateY(-1px);
-}
-
-.export-btn:active:not(:disabled) {
-  transform: translateY(0);
+  background: #1e40af;
 }
 
 .export-btn:disabled {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* ─── Hero ─── */
-.hero {
-  padding: 6rem 2rem 4rem;
+/* ─── Document header (name, title, contacts) ─── */
+.doc-header {
   text-align: center;
-  background: linear-gradient(135deg, #f0f4ff 0%, #e0f2fe 50%, #f0fdf4 100%);
-  position: relative;
-  overflow: hidden;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--color-text);
+  margin-bottom: 1.5rem;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, #cbd5e1 1px, transparent 0);
-  background-size: 32px 32px;
-  opacity: 0.25;
-  pointer-events: none;
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 1;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-  color: var(--color-text);
-}
-
-.hero-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--color-accent);
+.doc-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-bottom: 0.25rem;
 }
 
-.hero-location {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+.doc-title {
+  font-size: 1rem;
   color: var(--color-text-secondary);
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
 }
 
-.hero-experience-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
-  background: rgba(37, 99, 235, 0.1);
-  border: 2px solid var(--color-accent);
-  border-radius: 999px;
-  margin-bottom: 1.5rem;
-}
-
-.badge-number {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--color-accent);
-  line-height: 1;
-}
-
-.badge-label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.hero-contacts {
+.doc-contacts {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem 1.25rem;
   font-style: normal;
-}
-
-.hero-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.4rem 0.85rem;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  color: var(--color-text-secondary);
   font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.hero-link:hover {
-  background: #fff;
+.doc-contacts a {
+  color: var(--color-text-secondary);
+}
+
+.doc-contacts a:hover {
   color: var(--color-accent);
-  border-color: var(--color-accent-border);
-  box-shadow: var(--shadow-sm);
 }
 
-/* ─── Hero Export Button ─── */
-.hero-export-btn {
-  display: inline-flex;
+.doc-contacts .separator {
+  color: var(--color-border);
+}
+
+/* ─── Export button (big, in-document) ─── */
+.doc-export-btn {
+  display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-top: 2rem;
-  padding: 1rem 2.5rem;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 1.5rem auto 0;
+  padding: 0.75rem 2rem;
   background: var(--color-accent);
   color: #fff;
   border: none;
-  border-radius: var(--radius);
-  font-size: 1.15rem;
+  border-radius: 4px;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.25s;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  transition: background 0.15s;
   letter-spacing: 0.01em;
 }
 
-.hero-export-btn:hover:not(:disabled) {
-  background: var(--color-accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+.doc-export-btn:hover:not(:disabled) {
+  background: #1e40af;
 }
 
-.hero-export-btn:active:not(:disabled) {
-  transform: translateY(0);
-}
-
-.hero-export-btn:disabled {
-  opacity: 0.7;
+.doc-export-btn:disabled {
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* ─── Floating Export Button ─── */
-.floating-export-btn {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 200;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.5rem;
-  background: var(--color-accent);
-  color: #fff;
-  border: none;
-  border-radius: 999px;
-  font-size: 0.95rem;
+/* ─── Section headings ─── */
+.doc-section {
+  margin-bottom: 1.75rem;
+}
+
+.doc-section-title {
+  font-size: 1.1rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: all 0.25s;
-  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
-}
-
-.floating-export-btn:hover:not(:disabled) {
-  background: var(--color-accent-hover);
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.5);
-}
-
-.floating-export-btn:active:not(:disabled) {
-  transform: translateY(0) scale(1);
-}
-
-.floating-export-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-/* ─── Sections ─── */
-.section {
-  padding: 4rem 2rem;
-}
-
-.section-alt {
-  background: var(--color-bg-alt);
-}
-
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-.section h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 2rem;
-  padding-bottom: 0.75rem;
-  position: relative;
-}
-
-.section h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 48px;
-  height: 3px;
-  background: var(--color-accent);
-  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--color-text);
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
 }
 
 /* ─── Summary ─── */
-.summary-text {
-  font-size: 1.05rem;
-  line-height: 1.75;
+.doc-summary {
+  font-size: 0.92rem;
+  line-height: 1.65;
   color: var(--color-text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
-.highlights {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  gap: 0.65rem;
+.doc-highlights {
+  list-style: disc;
+  padding-left: 1.25rem;
 }
 
-.highlight-item {
-  position: relative;
-  padding-left: 1.15rem;
-  font-size: 0.95rem;
+.doc-highlights li {
+  font-size: 0.9rem;
+  line-height: 1.55;
   color: var(--color-text);
-  line-height: 1.5;
-}
-
-.highlight-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.55rem;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--color-accent);
+  margin-bottom: 0.25rem;
 }
 
 /* ─── Experience ─── */
-.experience-list {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.experience-card {
-  padding: 1.5rem 1.5rem 1.5rem 1.75rem;
-  background: var(--color-card);
-  border-left: 3px solid var(--color-accent);
-  border-radius: 0 var(--radius) var(--radius) 0;
-  box-shadow: var(--shadow-md);
-  page-break-inside: avoid;
-}
-
-.experience-header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.company-name {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.total-duration {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  white-space: nowrap;
-}
-
-.role-block {
+.exp-entry {
   margin-bottom: 1.25rem;
 }
 
-.role-block:last-child {
+.exp-entry:last-child {
   margin-bottom: 0;
 }
 
-.experience-card .role-block + .role-block {
-  padding-top: 1rem;
-  border-top: 1px dashed var(--color-border);
+.exp-company-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.role-title {
+.exp-company {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.exp-duration {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.exp-role {
+  margin-top: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.exp-role + .exp-role {
+  padding-top: 0.5rem;
+  border-top: 1px dotted var(--color-border-light);
+}
+
+.exp-role-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.exp-role-title {
+  font-size: 0.92rem;
   font-weight: 600;
-  color: var(--color-accent);
-  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.exp-role-period {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.exp-role-location {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.exp-role-highlights {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.2rem 0 0.3rem;
+}
+
+.exp-role-highlights li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
   margin-bottom: 0.15rem;
 }
 
-.role-meta {
+.exp-stack {
   font-size: 0.8rem;
   color: var(--color-text-muted);
-  margin-bottom: 0.65rem;
+  margin-top: 0.15rem;
 }
 
-.role-highlights {
-  list-style: none;
-  padding: 0;
-}
-
-.role-highlights li {
-  position: relative;
-  padding-left: 1.15rem;
-  margin-bottom: 0.35rem;
-  font-size: 0.9rem;
-  color: var(--color-text-secondary);
-  line-height: 1.55;
-}
-
-.role-highlights li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0.55rem;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--color-text-muted);
-}
-
-.role-stack {
-  margin-top: 0.65rem;
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  line-height: 1.5;
-}
-
-.role-stack strong {
+.exp-stack strong {
+  font-weight: 600;
   color: var(--color-text-secondary);
 }
 
 /* ─── Skills ─── */
-.skills-grid {
-  display: grid;
-  gap: 1.75rem;
+.skills-table {
+  width: 100%;
 }
 
-.skill-group h3 {
-  font-weight: 600;
-  color: var(--color-text-secondary);
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 0.8rem;
-}
-
-.skill-tags {
-  list-style: none;
-  padding: 0;
+.skill-row {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
-.skill-tag {
-  display: inline-block;
-  padding: 0.3rem 0.75rem;
-  background: var(--color-accent-light);
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent-border);
-  border-radius: 6px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  white-space: nowrap;
+.skill-category {
+  flex-shrink: 0;
+  width: 160px;
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.85rem;
+}
+
+.skill-list {
+  color: var(--color-text-secondary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
 }
 
 /* ─── Education ─── */
-.education-card {
-  padding: 1.5rem;
-  background: var(--color-card);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
-  margin-bottom: 2rem;
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.education-card h3 {
-  font-size: 1.1rem;
+.edu-institution {
   font-weight: 700;
-  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
 }
 
-.education-degree {
+.edu-period {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.edu-degree {
+  font-size: 0.88rem;
   color: var(--color-text-secondary);
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
+  margin-top: 0.15rem;
 }
 
-.education-period {
-  color: var(--color-text-muted);
-  font-size: 0.85rem;
+.lang-row {
+  margin-top: 1rem;
 }
 
-.languages-block h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.languages-list {
-  list-style: none;
-  padding: 0;
+.lang-list {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
+  font-size: 0.88rem;
 }
 
-.language-item {
+.lang-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.35rem;
 }
 
-.language-name {
+.lang-name {
   font-weight: 600;
-  font-size: 0.95rem;
 }
 
-.language-level {
+.lang-level {
   color: var(--color-text-muted);
-  font-size: 0.85rem;
 }
 
 /* ─── Contact ─── */
-.contact-grid {
+.contact-list {
   font-style: normal;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 2rem;
+  font-size: 0.88rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-.contact-card {
+.contact-item {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 1.25rem;
-  background: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius);
-  color: var(--color-text);
-  transition: all 0.2s;
+  gap: 0.5rem;
 }
 
-.contact-card:hover {
-  border-color: var(--color-accent-border);
-  box-shadow: var(--shadow-md);
-  color: var(--color-text);
-  transform: translateY(-2px);
-}
-
-.contact-label {
-  font-size: 0.75rem;
+.contact-item-label {
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-text-muted);
+  color: var(--color-text);
+  min-width: 90px;
 }
 
-.contact-value {
-  font-size: 0.95rem;
-  font-weight: 500;
+.contact-item-value {
   color: var(--color-accent);
 }
 
 /* ─── Footer ─── */
 .footer {
-  padding: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
   text-align: center;
-  border-top: 1px solid var(--color-border);
   color: var(--color-text-muted);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
+  body {
+    background: #fff;
+  }
+
+  .resume-page {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    padding: 1.5rem 1.25rem;
+  }
+
   .header {
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .header-nav {
     display: none;
   }
 
-  .hero {
-    padding: 4rem 1.25rem 3rem;
-  }
-
-  .hero h1 {
-    font-size: 2.25rem;
-  }
-
-  .hero-contacts {
-    gap: 0.5rem;
-  }
-
-  .hero-link {
-    font-size: 0.78rem;
-    padding: 0.35rem 0.65rem;
-  }
-
-  .section {
-    padding: 2.5rem 1.25rem;
-  }
-
-  .section h2 {
+  .doc-header h1 {
     font-size: 1.4rem;
   }
 
-  .experience-card {
-    padding: 1.25rem;
+  .doc-contacts {
+    font-size: 0.78rem;
   }
 
-  .contact-grid {
+  .skill-row {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .skill-category {
+    width: auto;
+  }
+
+  .contact-list {
     grid-template-columns: 1fr;
   }
 
-  .hero-export-btn {
-    padding: 0.85rem 1.75rem;
-    font-size: 1rem;
-    width: 100%;
-    justify-content: center;
+  .exp-company-row {
+    flex-direction: column;
+    gap: 0;
   }
 
-  .floating-export-btn {
-    bottom: 1rem;
-    right: 1rem;
-    padding: 0.75rem 1.25rem;
-    font-size: 0.85rem;
+  .edu-row {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
 /* ─── PDF Mode ─── */
-.pdf-mode {
-  max-width: 100%;
-}
-
-.pdf-mode .hero-export-btn {
+.pdf-mode .doc-export-btn {
   display: none;
 }
 
-.pdf-mode .hero-experience-badge {
-  display: none;
+.pdf-mode .resume-page {
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  padding: 1.5rem 2rem;
 }
 
-.pdf-mode .hero {
-  padding: 2rem 1.5rem 1.5rem;
-}
-
-.pdf-mode .hero h1 {
-  font-size: 2rem;
-}
-
-.pdf-mode .hero-title {
-  font-size: 1rem;
-}
-
-.pdf-mode .section {
-  padding: 1.5rem;
-}
-
-.pdf-mode .section h2 {
-  font-size: 1.3rem;
+.pdf-mode .doc-header {
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
-.pdf-mode .experience-card {
-  padding: 1rem 1rem 1rem 1.25rem;
-  margin-bottom: 0.5rem;
-  page-break-inside: avoid;
+.pdf-mode .doc-header h1 {
+  font-size: 1.5rem;
 }
 
-.pdf-mode .role-highlights li {
-  font-size: 0.82rem;
+.pdf-mode .doc-section {
+  margin-bottom: 1.25rem;
 }
 
-.pdf-mode .skill-tag {
-  font-size: 0.75rem;
-  padding: 0.2rem 0.5rem;
+.pdf-mode .exp-role-highlights li {
+  font-size: 0.8rem;
 }
 
-.pdf-mode .contact-grid {
+.pdf-mode .contact-list {
   grid-template-columns: repeat(3, 1fr);
 }
 
 /* ─── Print ─── */
 @media print {
-  .header {
+  body {
+    background: #fff;
+  }
+
+  .header,
+  .footer,
+  .doc-export-btn {
     display: none;
   }
 
-  .footer {
-    display: none;
-  }
-
-  .floating-export-btn {
-    display: none;
-  }
-
-  .hero-export-btn {
-    display: none;
-  }
-
-  .hero-experience-badge {
-    display: none;
-  }
-
-  .hero {
-    padding: 1.5rem;
-    background: #f8fafc !important;
-  }
-
-  .hero::before {
-    display: none;
-  }
-
-  .section {
-    padding: 1.5rem 0;
-  }
-
-  .experience-card {
+  .resume-page {
+    margin: 0;
+    border: none;
     box-shadow: none;
-    border: 1px solid var(--color-border);
+    padding: 1rem 1.5rem;
+  }
+
+  .exp-entry {
     page-break-inside: avoid;
   }
 }
