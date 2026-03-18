@@ -25,7 +25,7 @@ export interface Language {
 export const resumeData = {
   name: 'Rinat Fihtengolts',
   title: 'Senior Web3 Engineer | Fullstack Developer | Head of Engineering',
-  location: 'London, United Kingdom',
+  location: 'Dubai, UAE; Moscow, Russia',
 
   contact: {
     telegram: 'https://t.me/rfihtengolts',
