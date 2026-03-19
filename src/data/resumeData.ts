@@ -22,9 +22,14 @@ export interface Language {
   level: string;
 }
 
+export interface Achievement {
+  metric: string;
+  label: string;
+}
+
 export const resumeData = {
   name: 'Rinat Fihtengolts',
-  title: 'Senior Web3 Engineer | Fullstack Developer | Head of Engineering',
+  title: 'Head of Engineering | Senior Web3 Engineer | Cross-Chain Systems',
   location: 'Dubai, UAE; Moscow, Russia',
 
   contact: {
@@ -37,14 +42,22 @@ export const resumeData = {
   },
 
   summary:
-    '12+ years of full-stack development with a deep focus on blockchain since 2018. Ship fast and iterate — RDD (Results-Driven Development). Built APIs, SDKs, complex white-label CEXes/DEXes, trading bots and terminals, swap apps (Uniswap, Jupiter, Raydium, 1inch, deBridge, Wormhole integrations), cross-chain dApps, and trading systems — from scratch to production. Scaled products to 50k+ and 240k+ users. Led teams of up to 7 engineers across multiple Web3 projects.',
+    'Engineering leader with 12+ years of full-stack development and 7+ years specializing in blockchain systems. Built and shipped cross-chain DEX infrastructure processing $7.8M+ in swap volume, trading bots serving 50k+ users, and products scaled to 240k+ users. Led engineering teams of up to 7 across multiple Web3 protocols. Deep expertise in DeFi architecture, MEV systems, and cross-chain interoperability across Solana, Ethereum/L2, Cosmos, and 8+ chains. BSc in Computer & Information Security — applied to smart contract architecture and audit-ready systems.',
 
   highlights: [
-    'Working with: Solana, Ethereum/L2, Cosmos, Tron, BTC (forks)',
-    'Quant Algorithmic Trader (Digital Assets), Market Making — spot/perps, CeFi Low-latency/HFT, DeFi MEV & Liquidity Providing',
-    'Developed Telegram trading bot @ShogunSwapBot, scaling to 50k+ users',
-    'Developed Telegram mini app/game @TonchemyBot (12k MAU, ~240k registered users)',
+    'Chains: Solana, Ethereum/L2, Cosmos, TON, Tron, BTC, Secret Network — 8+ chains in production',
+    'Built cross-chain swap infrastructure processing $7.8M+ volume, audited by Hacken & CertiK (10/10)',
+    'Algorithmic trader: CeFi HFT & market making, DeFi MEV extraction (Jito) & LP optimization',
+    'Scaled @ShogunSwapBot to 50k+ users (Binance Labs / Polychain Capital backed)',
+    'Shipped @TonchemyBot — 12k MAU, 240k registered users, on-chain NFT minting on TON',
   ],
+
+  achievements: [
+    { metric: '50k+', label: 'Users — Shogun Trading Bot' },
+    { metric: '$7.8M+', label: 'Cross-chain Swap Volume' },
+    { metric: '240k', label: 'Users — TonchemyBot' },
+    { metric: '8+', label: 'Chains in Production' },
+  ] as Achievement[],
 
   experience: [
     {
@@ -56,9 +69,9 @@ export const resumeData = {
           period: 'May 2024 — Present',
           location: 'Cosmos Network',
           highlights: [
-            'Lead a team of 5 developers, a QA, and a DevOps engineer to build and launch core products on the Haqq blockchain network.',
-            'Architected and delivered a validator dashboard, on-chain DAO governance module, and multiple airdrop platforms.',
-            'Engineered a cross-chain swap dApp for L1/L2 native and ERC-20/721 tokens using the Optimism stack and integrated third-party liquidity from Stride and Sushi.',
+            'Lead 7-person engineering org (5 developers, QA, DevOps) delivering core blockchain infrastructure for the Haqq Network ecosystem.',
+            'Architected and shipped validator dashboard, on-chain DAO governance module, and token airdrop platforms used across the network.',
+            'Engineered cross-chain swap dApp supporting L1/L2 native and ERC-20/721 tokens on the Optimism stack, integrating liquidity from Stride and Sushi.',
           ],
           stack: 'Node/NestJS/Next.js, Rust, React, PHP (Laravel), Go, Langchain, Llama, MCP',
         },
@@ -67,9 +80,9 @@ export const resumeData = {
           period: 'Jun 2023 — May 2024',
           location: 'Dubai, UAE',
           highlights: [
-            'Built Firoza.finance — world\'s first on-chain Shariah-compliant Mudarabah smart contract platform (joint venture with Liberty Finance). Developed investment pools with up to 20% APY, mandatory KYC system, axlUSDC integration via Axelar bridge, and ETL transaction processing/analytics. $2M pilot program, 2,600+ waitlist users.',
-            'Developed TonchemyBot (@TonchemyBot) — Telegram mini app/game on TON blockchain. Alchemy-themed strategy game where players combine cards to discover recipes and craft NFTs. Built smart contracts on TON (Func) for minting/burning NFTs and jettons. Scaled to ~12k MAU with ~240k registered users.',
-            'Built and launched Unspent.io — crypto portfolio tracking dApp with auto-sync from 10+ exchanges (Binance, Coinbase Pro, Kraken, etc.) and multi-chain wallets (BTC, ETH, Cosmos, Tron). DeFi dashboard with Aave/Uniswap/Compound integrations, performance analytics, and asset correlation analysis. Funded via Gitcoin Grants.',
+            'Built Firoza.finance — world\'s first on-chain Shariah-compliant Mudarabah smart contract platform (JV with Liberty Finance). Investment pools with up to 20% APY, mandatory KYC, axlUSDC via Axelar bridge, ETL analytics. $2M pilot program, 2,600+ waitlist users.',
+            'Shipped TonchemyBot (@TonchemyBot) — Telegram mini app on TON blockchain. Built smart contracts (Func) for NFT minting/burning and jetton mechanics. Scaled to 12k MAU / 240k registered users.',
+            'Built Unspent.io — crypto portfolio tracker with auto-sync from 10+ CEXes and multi-chain wallets. DeFi dashboard (Aave/Uniswap/Compound), performance analytics, asset correlation. Funded via Gitcoin Grants.',
           ],
           stack: 'React, Next.js, TypeScript, Node.js, Tailwind, Wagmi, Ethers, Viem, Solana/web3.js, Anchor/Codama, Cosmos SDK, TON/Func, Turnkey, GCP/AWS',
         },
@@ -83,13 +96,12 @@ export const resumeData = {
           period: 'Jun 2024 — Jul 2025',
           location: 'Miami, FL, USA',
           highlights: [
-            'Developed a Solana/EVM multi-chain Telegram trading bot (@ShogunTradingBot, @ShogunSwapBot) for an intent-centric DeFi protocol incubated by Binance Labs ($6.9M seed, Polychain Capital). Scaled to 50,000+ users.',
-            'Built intent-based cross-chain swap system — users express swap intents and solver agents find optimal execution paths across chains, no manual bridging required.',
-            'Improved performance 3x by replacing third-party APIs with direct RPC calls, bot location optimisations, quotes management system.',
-            'Built swap SDKs, fee calculations, gas refuel logic, transaction indexer/parser for EVM/Solana.',
-            'Integrated 8+ chains: Ethereum, BNB, Base, Solana, Sonic, Arbitrum, Berachain, Cosmos ecosystem. Integrated liquidity from Uniswap, Curve, Jupiter, Raydium.',
-            'Implemented Jito/MEV protection and priority fees for Solana memes.',
-            'Integrated Turnkey authentication (social logins). Developed web-app with intent-swaps.',
+            'Core developer of Solana/EVM multi-chain Telegram trading bot (@ShogunTradingBot, @ShogunSwapBot) for intent-centric DeFi protocol backed by Binance Labs ($6.9M seed, Polychain Capital). Scaled to 50,000+ users.',
+            'Architected intent-based cross-chain swap system — solver agents find optimal execution paths across chains, eliminating manual bridging.',
+            'Improved trade execution latency 3x through direct RPC optimization, bot co-location, and quotes management — directly improving fill rates for active traders.',
+            'Built swap SDKs, fee calculations, gas refuel logic, and transaction indexer/parser for EVM/Solana.',
+            'Integrated 8+ chains (Ethereum, BNB, Base, Solana, Sonic, Arbitrum, Berachain, Cosmos) with liquidity from Uniswap, Curve, Jupiter, Raydium.',
+            'Implemented Jito/MEV protection and priority fee strategies for Solana memecoin trading.',
           ],
           stack: 'TypeScript, Solana/kit, Jupiter, Raydium, Paraswap, 1inch, deBridge, grammy, Turnkey, Jito',
         },
@@ -103,10 +115,10 @@ export const resumeData = {
           period: 'Sep 2025 — Present',
           location: 'Remote',
           highlights: [
-            'Developed SDK (@silentswap/sdk) and core swap infrastructure for SilentSwap — a privacy-focused, non-custodial, cross-chain DEX aggregator built on Secret Network.',
-            'Engineered private swap routing through Secret Network\'s encrypted smart contracts (Decentralized Confidential Computing), Shade Protocol liquidity, and Axelar bridge for cross-chain transfers.',
-            'Integrated Relay and deBridge for cross-chain bridging. Supported 8 chains: Ethereum, BNB, Polygon, Arbitrum, Optimism, Avalanche, Base, Solana.',
-            'Platform achieved $7.8M+ in swapped volume, audited by Hacken (10/10) and CertiK (10/10).',
+            'Developed SDK (@silentswap/sdk) and core swap infrastructure for SilentSwap — privacy-focused, non-custodial, cross-chain DEX aggregator on Secret Network. Platform processed $7.8M+ in swap volume.',
+            'Engineered private swap routing through Secret Network\'s encrypted smart contracts (Decentralized Confidential Computing), Shade Protocol liquidity, and Axelar bridge.',
+            'Integrated Relay and deBridge for cross-chain bridging across 8 chains: Ethereum, BNB, Polygon, Arbitrum, Optimism, Avalanche, Base, Solana.',
+            'Codebase audited by Hacken (10/10) and CertiK (10/10) — zero critical vulnerabilities.',
           ],
           stack: 'TypeScript, Secret Network, Shade Protocol, Axelar, deBridge, Relay, Solana',
         },
@@ -221,78 +233,20 @@ export const resumeData = {
       ],
     },
     {
-      company: 'Think Ministry, Inc.',
+      company: 'Earlier Career',
+      totalDuration: '5 years',
       roles: [
         {
-          title: 'Fullstack .Net/Angular Developer',
-          period: 'Jun 2017 — Nov 2018',
-          location: 'Georgia, USA',
+          title: 'Fullstack Developer & Founder',
+          period: 'Feb 2013 — Nov 2018',
+          location: 'Russia / USA',
           highlights: [
-            'Rewrote from scratch a CRM-system (social network) for American churches: payments, meetings, rallies, donations.',
-            'Migrated legacy web-forms and ASPX pages to Angular and modern .NET. SQL query optimizations and security testing.',
+            'Think Ministry (Georgia, USA) — Rewrote CRM system from scratch on .NET/Angular. Legacy migration, SQL optimization, security testing.',
+            'Ambaha IT-Solutions (St. Petersburg) — Built CRM/ERP systems, sports betting aggregator/validator. .NET, Angular, PostgreSQL, ClickHouse.',
+            'Polis24 (Kazan) — Payment terminal UI/UX, microservices for terminal data processing. Python, C++, Scala.',
+            'GarageInc (Founded) — Student software company. Built cryptography apps (elliptic curves), mobile apps, and CRM tools.',
           ],
-          stack: '.NET/.Core, Angular, MSSql, ORM',
-        },
-      ],
-    },
-    {
-      company: 'Ambaha IT-Solutions',
-      roles: [
-        {
-          title: 'Fullstack .NET / JS(Angular) / DevOps',
-          period: 'Oct 2016 — Jun 2018',
-          location: 'Saint Petersburg, Russia',
-          highlights: [
-            'Built CRM system for lsports.eu — collecting and analyzing tickets (Net MVC + Angular + WCF services).',
-            'Written aggregator/validator of sports bets (signals). Backend with WCF services, queues, and REST APIs.',
-            'Built ERP/CRM systems for managing field staff, customer acquisition, warehouse and store management.',
-          ],
-          stack: '.NET MVC, Angular, WCF, PostgreSQL, ClickHouse',
-        },
-      ],
-    },
-    {
-      company: 'Polis24',
-      roles: [
-        {
-          title: 'Software Engineer (FullStack)',
-          period: 'Sep 2015 — Oct 2016',
-          location: 'Kazan, Russia',
-          highlights: [
-            'Developed custom UI/UX for payment terminal (Actionscript, Python, C++, bash) for CTP policies and payments.',
-            'Built microservices for data processing from payment terminals (Scala). Developed admin panels for technicians and operators.',
-          ],
-          stack: 'JavaScript, Python, C++, Scala, ActionScript',
-        },
-      ],
-    },
-    {
-      company: 'BARS GROUP',
-      roles: [
-        {
-          title: 'ASP.NET + Ext.js Developer',
-          period: 'Oct 2014 — Jun 2015',
-          location: 'Kazan, Russia',
-          highlights: [
-            'Developed and supported budget reporting systems as web applications on ASP.NET MVC.',
-            'Designed database structures, migrations, stored procedures with Oracle and PostgreSQL via NHibernate ORM.',
-          ],
-          stack: 'ASP.NET MVC, C#, ExtJS 3, jQuery, Oracle, PostgreSQL',
-        },
-      ],
-    },
-    {
-      company: 'GarageInc',
-      roles: [
-        {
-          title: 'Self Employed Software Engineer',
-          period: 'Feb 2013 — Nov 2015',
-          location: 'Kazan, Russia',
-          highlights: [
-            'Founded a small student company for software development — mobile apps, warehouse accounting systems, CRM tools.',
-            'Built cryptography applications (elliptic curves, cryptographic protocols), search algorithm optimizations (bi/tri-grams, Levenshtein).',
-            'TCP/IP and UDP stack projects: multi-threaded servers, site parsing/crawling tools.',
-          ],
+          stack: '.NET, Angular, C#, Python, C++, Scala, PostgreSQL, Oracle',
         },
       ],
     },
@@ -336,6 +290,14 @@ export const resumeData = {
         'Algorithmic Trading', 'Market Making', 'HFT', 'DEX Aggregators',
         'LP Pools', 'Staking', 'Governance', 'Order Matching',
         'CEX Integrations', 'Trading Bots',
+      ],
+    },
+    {
+      category: 'Security & Auditing',
+      skills: [
+        'Smart Contract Security', 'Audit Readiness (Hacken, CertiK)',
+        'Cryptographic Protocols (secp256k1, ECDSA)', 'Information Security',
+        'MEV Protection', 'Access Control Patterns',
       ],
     },
   ] as SkillGroup[],

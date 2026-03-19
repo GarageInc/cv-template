@@ -105,6 +105,16 @@ function App() {
           </ul>
         </section>
 
+        {/* Key Achievements */}
+        <div className="achievements-grid">
+          {resumeData.achievements.map((a, i) => (
+            <div key={i} className="achievement-card">
+              <span className="achievement-metric">{a.metric}</span>
+              <span className="achievement-label">{a.label}</span>
+            </div>
+          ))}
+        </div>
+
         {/* Work Experience */}
         <section className="doc-section" id="experience">
           <h2 className="doc-section-title">Work Experience</h2>
