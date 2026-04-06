@@ -42,14 +42,14 @@ export const resumeData = {
   },
 
   summary:
-    'Engineering leader with 12+ years of full-stack development and 7+ years specializing in blockchain systems. Built and shipped cross-chain DEX infrastructure processing $7.8M+ in swap volume, trading bots serving 50k+ users, and products scaled to 240k+ users. Led engineering teams of up to 7 across multiple Web3 protocols. Deep expertise in DeFi architecture, MEV systems, and cross-chain interoperability across Solana, Ethereum/L2, Cosmos, and 8+ chains. BSc in Computer & Information Security — applied to smart contract architecture and audit-ready systems.',
+    '12 years of full-stack development experience with a deep focus on blockchain since 2018 — ship fast and iterate. Know DeFi and trading apps from within the ecosystem, both as a user and creator. Developed APIs, SDKs, kits, complex white-label CEXes/DEXes, trading bots and terminals, swap apps (Uniswap, Jupiter, Raydium, 1inch, deBridge, Wormhole integrations), cross-chain dApps, and trading systems — projects from scratch to production. Building AI agent systems on top of DeFi infrastructure, combining on-chain execution with LLM-driven decision layers. Working with: Solana, Ethereum/L2, Cosmos, Tron, BTC (PSBT+). Quant algorithmic trader (digital assets/perps/spot): CeFi low-latency/HFT, DeFi MEV & Liquidity Providing. RDD = Results-Driven Development.',
 
   highlights: [
-    'Chains: Solana, Ethereum/L2, Cosmos, TON, Tron, BTC, Secret Network — 8+ chains in production',
-    'Built cross-chain swap infrastructure processing $7.8M+ volume, audited by Hacken & CertiK (10/10)',
-    'Algorithmic trader: CeFi HFT & market making, DeFi MEV extraction (Jito) & LP optimization',
-    'Scaled @ShogunSwapBot to 50k+ users (Binance Labs / Polychain Capital backed)',
-    'Shipped @TonchemyBot — 12k MAU, 240k registered users, on-chain NFT minting on TON',
+    'Built and scaled @ShogunSwapBot to 50k+ users and @TonchemyBot to 12k MAU / ~240k registered users',
+    'Developed private SilentSwap cross-chain infrastructure with 6M+ swap volume and production usage',
+    'Built AI agent systems on top of DeFi rails: LLM decision layers with on-chain execution workflows',
+    'Shipped APIs, SDKs, trading terminals, white-label CEX/DEX systems, swap apps, and cross-chain dApps from scratch to production',
+    'Quant algorithmic trader across digital assets (perps/spot): CeFi low-latency/HFT, DeFi MEV, and liquidity providing',
   ],
 
   achievements: [
