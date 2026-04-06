@@ -17,7 +17,7 @@ function App() {
       await html2pdf()
         .set({
           margin: [0.3, 0.4, 0.3, 0.4],
-          filename: 'Rinat_Fihtengolts_Resume.pdf',
+          filename: 'Rinat_Fullstack_Engineer_Resume.pdf',
           image: { type: 'jpeg', quality: 0.98 },
           html2canvas: { scale: 2, useCORS: true, logging: false },
           jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
