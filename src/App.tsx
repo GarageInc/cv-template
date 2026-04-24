@@ -208,10 +208,6 @@ function App() {
               <span className="contact-item-label">GitHub</span>
               <a href={resumeData.contact.github} target="_blank" rel="noopener noreferrer" className="contact-item-value">github.com/GarageInc</a>
             </div>
-            <div className="contact-item">
-              <span className="contact-item-label">GitHub (Alt)</span>
-              <a href={resumeData.contact.githubAlt} target="_blank" rel="noopener noreferrer" className="contact-item-value">github.com/rfihtengolts</a>
-            </div>
           </address>
         </section>
       </main>

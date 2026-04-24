@@ -28,7 +28,7 @@ export interface Achievement {
 }
 
 export const resumeData = {
-  name: 'Rinat Rakhimulin (Fihtengolts)',
+  name: 'Rinat Fihtengolts',
   title: 'Head of Engineering | Senior Web3 Engineer | Cross-Chain Systems',
   location: 'Dubai, UAE; Moscow, Russia',
 
@@ -38,7 +38,6 @@ export const resumeData = {
     email: 'rinatficht@gmail.com',
     linkedin: 'https://www.linkedin.com/in/rfihtengolts',
     github: 'https://github.com/GarageInc',
-    githubAlt: 'https://github.com/rfihtengolts',
   },
 
   summary:

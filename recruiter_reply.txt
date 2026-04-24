@@ -1,0 +1,103 @@
+Hello,
+
+Thank you for reaching out and for the detailed preview of the role. Please find my responses below, along with context on how my background maps to the requirements.
+
+=== Preliminary Questions ===
+
+1. Desired salary:
+   My target rate is $50-70/hour (C2C) given seniority, lead-level responsibilities, and the specific crypto-trading / DeFi focus of this role. I am open to discussing a blended package ($65/hr base + performance bonus + equity/tokens) if the upside is meaningful. Happy to align around scope and expected output.
+
+2. Nationality: Russian.
+
+3. Currently located: Dubai, UAE (primary) and Moscow, Russia. GMT+4 / GMT+3 — comfortable working with US, EU, and APAC teams.
+
+4. Start date availability on acceptance of offer: ~1 week from offer. No vesting, notice, or non-compete constraints blocking a clean start.
+
+5. Interview availability: Weekdays, Mon-Fri, 10:00-19:00 Dubai time (GMT+4). I can flex earlier/later to accommodate US or APAC time zones. Google Meet, Zoom, or Teams all work.
+
+6. Pending job applications, interviews, or offers: I have a couple of active conversations at the senior / lead Web3 level, but nothing at the offer stage. I will keep you informed if anything progresses so we can coordinate timelines.
+
+7. Worked with another recruiter for this position: No — this role is new to me, and I have not been submitted to this client by anyone else.
+
+=== Screening Questions ===
+
+1. 3-5+ years of full-stack engineering experience?
+   Yes — 12 years of full-stack experience end-to-end (frontend, backend, infra, databases), with the last 7+ years focused specifically on blockchain and Web3. I have shipped greenfield products to production and led engineering orgs.
+
+2. Years of hands-on experience per technology:
+
+   - Node.js (NVM, NPM): 10+ years. Backend services, APIs/SDKs, trading bot infrastructure, NestJS/Next.js servers in production.
+   - HTML / CSS / JavaScript: 12+ years. Core of my frontend career since 2013.
+   - Cloud (AWS, GCP, Azure): 7+ years. AWS (RDS, S3, EC2, Lambda) since my exchange work at Studio Mobile; GCP across Haqq Network and Firoza.finance; Azure via earlier CRM work.
+   - SQL / NoSQL databases: 10+ years. PostgreSQL, MySQL, Oracle, ClickHouse on the relational side; MongoDB and Redis on the NoSQL side. Used for trading data, indexers, and analytics.
+   - Blockchain fundamentals: 7+ years (since 2018).
+       a. Web3 concepts: 7+ years — built dApps, wallets, DEXes, bridges, and trading bots from scratch.
+       b. Wallets and crypto transaction flows: 7+ years — co-founder of TotalSig (multi-sig browser wallet supporting BTC, ETH, Tron, BSC, Doge); Senior at XDEFI Wallet building swap aggregator and transaction signing; Solana/EVM signing flows in Shogun trading bot.
+       c. Smart contract interaction: 7+ years — Solidity across 50+ contracts on EVM chains, Rust on Solana (Anchor/Codama), Func on TON, CosmWasm on Cosmos, Secret Network's encrypted contracts.
+
+   - Hands-on integrating with:
+       a. Blockchain APIs: 7+ years — JSON-RPC, WebSocket subscriptions, indexers (The Graph, Subsquid), RPC optimization and co-location for latency-sensitive trading.
+       b. Web3 libraries: 7+ years — ethers.js, viem, wagmi, web3.js, @solana/web3.js / @solana/kit, Anchor, Cosmos SDK, TON SDK.
+       c. Decentralized / crypto-enabled systems: 7+ years — cross-chain aggregators, MEV/Jito, Uniswap/Jupiter/Raydium/1inch/deBridge/Wormhole/Axelar integrations, intent-based swap routing, LP protocols.
+       d. Agile / Jira: 10+ years. Jira, Linear, ClickUp, Notion. Currently leading a 7-person engineering org on 2-week sprints at Haqq Network.
+
+   Nice-to-haves:
+   - Distributed systems: Yes — cross-chain infra, indexers, multi-region RPC routing, event-driven data pipelines.
+   - Event-driven architecture: Yes — WebSocket-based price/order-flow pipelines, on-chain event listeners, webhook-driven trading signals.
+   - Ethereum / Polygon / EVM chains: Deep, daily — production work across Ethereum, Polygon, Arbitrum, Optimism, Base, BNB, Avalanche, Sonic, Berachain.
+   - Security best practices in blockchain: Yes — BSc in Computer and Information Systems Security. Audit-ready codebases (Hacken 10/10, CertiK 10/10 on SilentSwap), MEV protection, access-control patterns, secp256k1/ECDSA crypto work at TotalSig.
+
+3. Real familiarity with crypto trading, DeFi, or exchange-related workflows:
+   Yes — this is one of the densest areas of my experience, not general blockchain exposure.
+   - Core developer of @ShogunTradingBot and @ShogunSwapBot (Intensity Labs, backed by Binance Labs $6.9M seed + Polychain). Scaled to 50,000+ users. Built swap SDKs, fee logic, gas refuel, EVM/Solana transaction indexer/parser, Jito/MEV protection, and priority-fee strategies for Solana memecoin trading. Improved trade execution latency 3x via direct RPC optimization, bot co-location, and quote management.
+   - SilentSwap (SquidGrow) — developed @silentswap/sdk and core swap infrastructure for a privacy-focused cross-chain DEX aggregator on Secret Network. Processed $7.8M+ in swap volume. Integrated Relay, deBridge, Shade Protocol, Axelar across 8 chains.
+   - Earlier exchange work at Studio Mobile — built order matching, trading bots, KYC, token integrations, and CI/CD for several crypto exchanges (qoden.com, gcox.com, bitkonan.com, sugarexchange.io).
+   - Santiment — "Bloomberg for crypto traders" — signals, metrics, charts, CEX deposit/withdrawal tracking, real-time order books.
+
+4. Actual cryptocurrency trading experience:
+   Yes, I am an active quant / algorithmic trader on digital assets across perps and spot:
+   - CeFi: low-latency / HFT strategies on Binance, Bybit, and OKX via their REST + WebSocket APIs. Market-making, taker arbitrage, and basis trades.
+   - DeFi: MEV-adjacent strategies (priority-fee optimization, private order flow via Jito on Solana) and liquidity provisioning on Uniswap v3, Jupiter, Raydium, and Curve. Running concentrated-liquidity positions with active rebalancing.
+   - Personal portfolio across BTC, ETH, SOL, majors, and selective alts since 2018. Used Shogun, Jupiter, 1inch, CEXes, and wallet-native swaps in day-to-day execution.
+   - I treat trading as both a personal discipline and a product lens — every trading tool I build comes from the perspective of "what do I actually want as a trader."
+
+5. Profile links:
+   - GitHub:    https://github.com/GarageInc  (primary)
+   - LinkedIn:  https://www.linkedin.com/in/rfihtengolts
+   - X:         available on request — can share DM-only handle if required for the application
+   - Instagram: not maintained professionally; can share on request if required
+   - Portfolio: https://rfihtengolts.github.io  (resume site) — PDF resume also available on request
+
+6. Able to join ~1 week from offer: Yes, confirmed. No blockers on my side.
+
+7. Self-introduction to the client:
+
+   I am Rinat Fihtengolts, a senior Web3 engineer and engineering lead with 12 years of full-stack experience and 7+ years focused specifically on blockchain — since 2018. I currently serve as Head of Web3 Development at Haqq Network, leading a 7-person engineering organization delivering core blockchain infrastructure, cross-chain swaps, DAO governance, and validator tooling. In parallel I consult as a Senior Blockchain Developer at SilentSwap (SquidGrow), where I built the SDK and core swap infrastructure that has processed over $7.8M in cross-chain volume on Secret Network, with codebases audited 10/10 by both Hacken and CertiK.
+
+   The work most relevant to a crypto-trading-bot platform is my role as core developer of the Shogun Trading Bot — a Solana and EVM multi-chain Telegram trading bot for an intent-centric DeFi protocol backed by Binance Labs and Polychain Capital. I scaled it to over 50,000 users, built the swap SDKs, fee and gas-refuel logic, EVM/Solana transaction indexer/parser, and implemented Jito/MEV protection and priority-fee strategies for Solana memecoin trading. I also reduced execution latency by 3x via direct RPC optimization and bot co-location, directly improving fill rates for active traders.
+
+   Beyond building these tools, I trade personally — CeFi low-latency / HFT on major exchanges, and DeFi MEV + concentrated-liquidity provisioning. That means when I build a trading-bot product, I am building it with my own trader's instincts around latency, slippage, fill quality, and user trust, not just product specs handed down from a PM.
+
+   I hold a BSc in Computer and Information Systems Security, which has shaped my habit of treating smart-contract work as adversarial by default — access control, replay protection, MEV exposure, and audit readiness are built in from day one, not bolted on before shipping.
+
+8. How does this position interest you?
+   A crypto-trading-bot platform is exactly the intersection of the three areas I spend most of my time on: low-latency execution infrastructure, DeFi protocol integration, and actual trading. I have already shipped this class of product at scale (50k+ users on Shogun) and I have strong opinions about what separates a bot that retains traders from one that does not — RPC strategy, slippage and MEV handling, quote management, UX around gas and failed transactions, and the signal-to-noise of alerting. I would enjoy bringing that experience to a team where trading is the core product, not a side feature.
+
+9. Is this position worth changing jobs for, and why?
+   It can be, depending on scope and total compensation. What would make it worth it for me: (a) a senior / lead role with real influence on execution architecture and trading features, not just ticket work; (b) compensation that reflects the seniority level — base rate at the upper end of the range plus meaningful performance and equity/token upside tied to platform growth; (c) a team that genuinely treats the product as a trading product and not a generic wallet with buttons. On format, I am happy to start on a contract basis and move to a longer-term arrangement once both sides are confident in the fit.
+
+10. Anything else I would like the client to know:
+    - I operate comfortably as an IC and as an engineering lead; whichever the client needs, I can slot in. I have shipped greenfield products solo and I have led 7-person orgs — the mode is a choice, not a limitation.
+    - I am audit-fluent (Hacken and CertiK, 10/10 on SilentSwap), which matters for anything that custodies user funds or executes signed transactions on their behalf.
+    - Cross-chain is a daily reality for me — I have production work across 8+ chains (Ethereum, BNB, Base, Solana, Sonic, Arbitrum, Berachain, Cosmos, Polygon, Avalanche, Optimism) via liquidity from Uniswap, Curve, Jupiter, Raydium, 1inch, deBridge, Relay, Axelar, and Wormhole.
+    - My updated CV is attached. Happy to walk through any of the above, share code samples from public repos (github.com/GarageInc), or jump on a call at your convenience.
+
+Thank you for sending this through — I am looking forward to the next step. A Google Meet or Zoom call works whenever suits your calendar.
+
+Best regards,
+Rinat Fihtengolts
+Email:    rinatficht@gmail.com
+Telegram: https://t.me/rfihtengolts
+Phone:    +7 965 591 8115
+LinkedIn: https://www.linkedin.com/in/rfihtengolts
+GitHub:   https://github.com/GarageInc
