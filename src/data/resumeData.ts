@@ -77,23 +77,6 @@ export const resumeData = {
       ],
     },
     {
-      company: 'SilentSwap (SquidGrow)',
-      roles: [
-        {
-          title: 'Senior Blockchain Developer, Consulting',
-          period: 'Sep 2025 — Present',
-          location: 'Remote',
-          highlights: [
-            'Developed SDK (@silentswap/sdk) and core swap infrastructure for SilentSwap — privacy-focused, non-custodial, cross-chain DEX aggregator on Secret Network. Platform processed $7.8M+ in swap volume.',
-            'Engineered private swap routing through Secret Network\'s encrypted smart contracts (Decentralized Confidential Computing), Shade Protocol liquidity, and Axelar bridge.',
-            'Integrated Relay and deBridge for cross-chain bridging across 8 chains: Ethereum, BNB, Polygon, Arbitrum, Optimism, Avalanche, Base, Solana.',
-            'Codebase audited by Hacken (10/10) and CertiK (10/10) — zero critical vulnerabilities.',
-          ],
-          stack: 'TypeScript, Secret Network, Shade Protocol, Axelar, deBridge, Relay, Solana',
-        },
-      ],
-    },
-    {
       company: 'Intensity Labs (Shogun Finance)',
       roles: [
         {
@@ -122,24 +105,9 @@ export const resumeData = {
             'Built Firoza.finance (liquidity pools) as lead developer — multi-chain integration, KYC, ETL transaction processing & analytics. World\'s-first on-chain Shariah-compliant Mudarabah smart contract platform; $2M pilot program, 2,600+ waitlist users.',
             'Shipped @TonchemyBot — a Telegram mini-app game built from scratch on TON; wrote smart contracts (Func) for minting/burning NFTs & jettons; grew to ~12k MAU / ~240k registered users.',
             'Built Unspent.io — portfolio-tracking dApp across EVM/BTC/Cosmos; integrated CEX APIs (Binance, OKX) and OpenAI/GPT-4 for portfolio forecasting; Coinbase payments and watchlists via CoinGecko/CMC.',
+            'Built totalsig.com — a non-custodial, multi-signature browser wallet (extension) from scratch, supporting Bitcoin, Ethereum, Tron, BSC, and Doge; secp256k1/ECDSA for secure cross-client signature approvals.',
           ],
           stack: 'React, Next.js, TypeScript, Node.js, Wagmi/Ethers/Viem, Solana/web3.js, Anchor/Codama, Cosmos SDK, TON/Func, Turnkey, GCP/AWS',
-        },
-      ],
-    },
-    {
-      company: 'TotalSig (Self-funded Startup)',
-      roles: [
-        {
-          title: 'Co-founder & Blockchain Fullstack Developer',
-          period: 'May 2023 — Oct 2023',
-          location: 'Tallinn, Estonia',
-          highlights: [
-            'Architected and built a non-custodial, multi-signature browser wallet (extension) from scratch, supporting Bitcoin, Ethereum, Tron, BSC, and Doge.',
-            'Engineered core wallet functionality using React and Manifest V3, enabling dApp interactions with multi-sig transactions for all EVM-based chains.',
-            'Implemented cryptographic functions using secp256k1/ECDSA for secure cross-client signature approvals.',
-          ],
-          stack: 'React, Web3, Manifest V3, Node.js',
         },
       ],
     },
@@ -220,36 +188,66 @@ export const resumeData = {
       ],
     },
     {
-      company: 'Studio Mobile',
+      company: 'Ambaha IT-Solutions | .NET and QA teams',
       roles: [
         {
-          title: 'Fullstack C#/.Net / React / Blockchain Developer',
-          period: 'Oct 2018 — May 2019',
-          location: 'Las Vegas, NV',
+          title: 'Fullstack, .NET / JS (Angular) / DevOps',
+          period: 'Sep 2016 — Jun 2018',
+          location: 'St. Petersburg, Russia',
           highlights: [
-            'Built crypto payment exchanges and trading platforms (qoden.com, gcox.com, bitkonan.com, sugarexchange.io).',
-            'Implemented payment services, blockchain wallets, KYC verification system, and new token integrations.',
-            'Customized trading mechanism (order matching), trading bots, CI/CD of numerous exchanges on AWS.',
+            'Built a CRM system from scratch for collecting and analyzing tickets/signals (.NET MVC + Angular + WCF services) for lsports.eu.',
+            'Wrote an aggregator/validator of sports bets, plus a web interface for building Boolean algebra in human language, with data sync via third-party APIs and rule-based validation.',
+            'Built the backend as a set of WCF services with queues and REST services for processing incoming data.',
           ],
-          stack: 'C#/.NET, React, Solidity, AWS (RDS, S3), Grafana',
+          stack: '.NET MVC, C#, Angular, WCF, REST, PostgreSQL',
         },
       ],
     },
     {
-      company: 'Earlier Career',
-      totalDuration: '5 years',
+      company: 'Polis24',
       roles: [
         {
-          title: 'Fullstack Developer & Founder',
-          period: 'Feb 2013 — Nov 2018',
-          location: 'Russia / USA',
+          title: 'Software Engineer (Fullstack)',
+          period: 'Sep 2015 — Oct 2016',
+          location: 'Kazan, Russia',
           highlights: [
-            'Think Ministry (Georgia, USA) — Rewrote CRM system from scratch on .NET/Angular. Legacy migration, SQL optimization, security testing.',
-            'Ambaha IT-Solutions (St. Petersburg) — Built CRM/ERP systems, sports betting aggregator/validator. .NET, Angular, PostgreSQL, ClickHouse.',
-            'Polis24 (Kazan) — Payment terminal UI/UX, microservices for terminal data processing. Python, C++, Scala.',
-            'GarageInc (Founded) — Student software company. Built cryptography apps (elliptic curves), mobile apps, and CRM tools.',
+            'Developed custom UI/UX for payment terminals (polis24.ru) handling CTP policy registration, payment acceptance, and policy issuance — hardware and user interaction.',
+            'Built panels for technicians, operators, and administrators with financial-transaction reporting.',
+            'Developed microservices (Scala) for data-processing servers receiving data from payment terminals.',
           ],
-          stack: '.NET, Angular, C#, Python, C++, Scala, PostgreSQL, Oracle',
+          stack: 'ActionScript, Python, C++, JavaScript, Scala, bash',
+        },
+      ],
+    },
+    {
+      company: 'GarageInc',
+      roles: [
+        {
+          title: 'Self-Employed Software Engineer',
+          period: 'Feb 2013 — Nov 2015',
+          location: 'Kazan, Russia',
+          highlights: [
+            'Founded a student software company solving a wide range of client problems — from CRMs and warehouse-accounting systems to mobile apps and a freelance exchange.',
+            'Built crypto payment exchanges and trading platforms (qoden.com, gcox.com, bitkonan.com, sugarexchange.io): payment services, wallets, KYC, token integrations, trading bots, and multi-exchange CI.',
+            'Implemented cryptography (elliptic curves, protocol emulation), search algorithms (bi/tri-grams, Levenshtein, Huffman), and TCP/IP/UDP-stack projects (chats, multi-threaded ws/ftp servers, crawlers).',
+          ],
+          stack: 'C#/.NET, Angular, JavaScript, C++, cryptography, PostgreSQL',
+        },
+      ],
+    },
+    {
+      company: 'BARS GROUP',
+      roles: [
+        {
+          title: 'ASP.NET + Ext.js Developer',
+          period: 'Oct 2014 — Jun 2015',
+          location: 'Kazan, Russia',
+          highlights: [
+            'Developed and supported budget-reporting web applications on the ASP.NET MVC framework, writing server-side C# modules following OOP/design principles.',
+            'Refactored and optimized existing modules; integrated third-party systems via WCF services; extended the client side with jQuery and ExtJS 3.',
+            'Designed database structures, migrations, queries, views, and stored procedures (Oracle, PostgreSQL) via NHibernate; configured CI and test-server deployments.',
+          ],
+          stack: 'ASP.NET MVC, C#, ExtJS 3, jQuery, WCF, Oracle, PostgreSQL, NHibernate',
         },
       ],
     },
