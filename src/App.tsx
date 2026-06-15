@@ -157,8 +157,12 @@ function App() {
           <div className="skills-table">
             {resumeData.skills.map((group, i) => (
               <div key={i} className="skill-row">
-                <span className="skill-category">{group.category}:</span>
-                <span className="skill-list">{group.skills.join(', ')}</span>
+                <span className="skill-category">{group.category}</span>
+                <span className="skill-list">
+                  {group.skills.map((s, k) => (
+                    <span key={k} className="skill-chip">{s}</span>
+                  ))}
+                </span>
               </div>
             ))}
           </div>

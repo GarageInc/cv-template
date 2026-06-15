@@ -29,8 +29,8 @@ export interface Achievement {
 
 export const resumeData = {
   name: 'Rinat Fihtengolts',
-  title: 'Head of Engineering | Senior Web3 Engineer | Cross-Chain Systems',
-  location: 'Dubai, UAE; Moscow, Russia',
+  title: 'AI & Blockchain Engineer · Team Lead | LLM Agents — RAG, LangChain, MCP | Cross-Chain DeFi · Rust · TypeScript · Solana/EVM/Cosmos/BTC',
+  location: 'Dubai, UAE',
 
   contact: {
     telegram: 'https://t.me/rfihtengolts',
@@ -41,14 +41,14 @@ export const resumeData = {
   },
 
   summary:
-    '12 years of full-stack development experience with a deep focus on blockchain since 2018 — ship fast and iterate. Know DeFi and trading apps from within the ecosystem, both as a user and creator. Developed APIs, SDKs, kits, complex white-label CEXes/DEXes, trading bots and terminals, swap apps (Uniswap, Jupiter, Raydium, 1inch, deBridge, Wormhole integrations), cross-chain dApps, and trading systems — projects from scratch to production. Building AI agent systems on top of DeFi infrastructure, combining on-chain execution with LLM-driven decision layers. Working with: Solana, Ethereum/L2, Cosmos, Tron, BTC (PSBT+). Quant algorithmic trader (digital assets/perps/spot): CeFi low-latency/HFT, DeFi MEV & Liquidity Providing. RDD = Results-Driven Development.',
+    'Hands-on engineer with 12+ years in software and 8 years in Web3, now building AI agent systems on top of DeFi infrastructure — pairing on-chain execution with LLM-driven decision layers. I design RAG pipelines that parse on-chain and market data, decide, fetch context, and act (buy/sell/notify), looping on new triggers — agent pipelines, not scripts — using LangChain, MCP, Ollama, Hugging Face, and OpenAI. I know DeFi and trading apps from inside the ecosystem, as both user and builder: APIs, SDKs, white-label CEXes/DEXes, trading bots and terminals, swap apps (Uniswap, Jupiter, Raydium, 1inch, deBridge, Wormhole), and cross-chain dApps — from scratch to production. Chains: Solana, Ethereum/L2, Cosmos, Tron, Bitcoin (PSBT), Monero. Also a quant/algorithmic trader (spot/perps): CeFi low-latency/HFT, DeFi MEV and liquidity providing. Ship fast, iterate, and stay in support — Results-Driven Development.',
 
   highlights: [
-    'Built and scaled @ShogunSwapBot to 50k+ users and @TonchemyBot to 12k MAU / ~240k registered users',
-    'Developed private SilentSwap cross-chain infrastructure with 6M+ swap volume and production usage',
-    'Built AI agent systems on top of DeFi rails: LLM decision layers with on-chain execution workflows',
-    'Shipped APIs, SDKs, trading terminals, white-label CEX/DEX systems, swap apps, and cross-chain dApps from scratch to production',
-    'Quant algorithmic trader across digital assets (perps/spot): CeFi low-latency/HFT, DeFi MEV, and liquidity providing',
+    'Building production AI agents that parse on-chain & market data, decide, fetch context, and trigger actions (buy/sell/notify) — RAG + LangChain + MCP pipelines, not scripts',
+    'Built and scaled @ShogunSwapBot / @ShogunTradingBot to 50k+ users with 3x faster execution by replacing third-party APIs with direct RPC calls',
+    'Developed SilentSwap private cross-chain DEX aggregator — $7.8M+ swap volume, audited 10/10 by Hacken & CertiK',
+    'Shipped @TonchemyBot Telegram mini-app on TON to 12k MAU / ~240k registered users, including NFT & jetton smart contracts',
+    'Delivered APIs, SDKs, trading terminals, white-label CEX/DEX systems, and cross-chain dApps across 8+ chains — scratch to production',
   ],
 
   achievements: [
@@ -61,48 +61,18 @@ export const resumeData = {
   experience: [
     {
       company: 'Haqq Network',
-      totalDuration: '2 years 10 months',
       roles: [
         {
-          title: 'Head of Web3 Development / Team Lead',
-          period: 'May 2024 — Present',
-          location: 'Cosmos Network',
-          highlights: [
-            'Lead 7-person engineering org (5 developers, QA, DevOps) delivering core blockchain infrastructure for the Haqq Network ecosystem.',
-            'Architected and shipped validator dashboard, on-chain DAO governance module, and token airdrop platforms used across the network.',
-            'Engineered cross-chain swap dApp supporting L1/L2 native and ERC-20/721 tokens on the Optimism stack, integrating liquidity from Stride and Sushi.',
-          ],
-          stack: 'Node/NestJS/Next.js, Rust, React, PHP (Laravel), Go, Langchain, Llama, MCP',
-        },
-        {
-          title: 'Senior Fullstack Engineer',
-          period: 'Jun 2023 — May 2024',
+          title: 'Team Lead / Hands-on Fullstack Engineer',
+          period: 'Jul 2025 — Present',
           location: 'Dubai, UAE',
           highlights: [
-            'Built Firoza.finance — world\'s first on-chain Shariah-compliant Mudarabah smart contract platform (JV with Liberty Finance). Investment pools with up to 20% APY, mandatory KYC, axlUSDC via Axelar bridge, ETL analytics. $2M pilot program, 2,600+ waitlist users.',
-            'Shipped TonchemyBot (@TonchemyBot) — Telegram mini app on TON blockchain. Built smart contracts (Func) for NFT minting/burning and jetton mechanics. Scaled to 12k MAU / 240k registered users.',
-            'Built Unspent.io — crypto portfolio tracker with auto-sync from 10+ CEXes and multi-chain wallets. DeFi dashboard (Aave/Uniswap/Compound), performance analytics, asset correlation. Funded via Gitcoin Grants.',
+            'Lead a 7-person engineering org (5 developers, QA, DevOps) delivering core blockchain infrastructure for the Haqq Network ecosystem (Cosmos Network + EVM / Optimism).',
+            'Build AI agents that parse on-chain & market data, make decisions, fetch context, and trigger actions (buy/sell/notify), looping on new triggers — RAG + LangChain + MCP pipelines, not scripts.',
+            'Architected and delivered a validator dashboard, on-chain DAO governance module, and multiple token airdrop platforms used across the network.',
+            'Engineered a cross-chain swap dApp supporting L1/L2 native and ERC-20/721 tokens on the Optimism stack, integrating third-party liquidity (Stride, Sushi).',
           ],
-          stack: 'React, Next.js, TypeScript, Node.js, Tailwind, Wagmi, Ethers, Viem, Solana/web3.js, Anchor/Codama, Cosmos SDK, TON/Func, Turnkey, GCP/AWS',
-        },
-      ],
-    },
-    {
-      company: 'Intensity Labs (Shogun Finance)',
-      roles: [
-        {
-          title: 'Senior Blockchain Developer, Consulting',
-          period: 'Jun 2024 — Jul 2025',
-          location: 'Miami, FL, USA',
-          highlights: [
-            'Core developer of Solana/EVM multi-chain Telegram trading bot (@ShogunTradingBot, @ShogunSwapBot) for intent-centric DeFi protocol backed by Binance Labs ($6.9M seed, Polychain Capital). Scaled to 50,000+ users.',
-            'Architected intent-based cross-chain swap system — solver agents find optimal execution paths across chains, eliminating manual bridging.',
-            'Improved trade execution latency 3x through direct RPC optimization, bot co-location, and quotes management — directly improving fill rates for active traders.',
-            'Built swap SDKs, fee calculations, gas refuel logic, and transaction indexer/parser for EVM/Solana.',
-            'Integrated 8+ chains (Ethereum, BNB, Base, Solana, Sonic, Arbitrum, Berachain, Cosmos) with liquidity from Uniswap, Curve, Jupiter, Raydium.',
-            'Implemented Jito/MEV protection and priority fee strategies for Solana memecoin trading.',
-          ],
-          stack: 'TypeScript, Solana/kit, Jupiter, Raydium, Paraswap, 1inch, deBridge, grammy, Turnkey, Jito',
+          stack: 'Node/NestJS/Next.js, Rust, React, PHP (Laravel), Go, LangChain, Llama, MCP, Ollama, OpenAI',
         },
       ],
     },
@@ -124,6 +94,40 @@ export const resumeData = {
       ],
     },
     {
+      company: 'Intensity Labs (Shogun Finance)',
+      roles: [
+        {
+          title: 'Senior Blockchain Developer, Consulting (Contract)',
+          period: 'Jun 2024 — Jul 2025',
+          location: 'Miami, FL, USA',
+          highlights: [
+            'Built @ShogunTradingBot / @ShogunSwapBot — Solana/EVM Telegram trading bot for an intent-centric DeFi protocol backed by Binance Labs ($6.9M seed, Polychain Capital). Scaled to 50,000+ users.',
+            'Improved performance 3x by replacing third-party APIs with direct RPC calls, location optimisation, and a quotes-management system — directly improving fill rates for active traders.',
+            'Integrated Jupiter, Raydium, Paraswap, 1inch, deBridge across 8+ chains (BNB, Base, Solana, Sonic, Ethereum, Arbitrum, Berachain, Cosmos).',
+            'Built swap SDKs, fee calculation, gas-refuel logic, and an EVM/Solana tx indexer/parser; migrated the Telegram layer to grammY.',
+            'Implemented Jito/MEV protection and priority fees for Solana; Turnkey social-login auth; intent-based swap web app from scratch.',
+          ],
+          stack: 'TypeScript, Solana/kit, Jupiter, Raydium, Paraswap, 1inch, deBridge, grammY, Turnkey, Jito',
+        },
+      ],
+    },
+    {
+      company: 'Haqq',
+      roles: [
+        {
+          title: 'Senior Fullstack Engineer',
+          period: 'Jun 2023 — May 2024',
+          location: 'Dubai, UAE',
+          highlights: [
+            'Built Firoza.finance (liquidity pools) as lead developer — multi-chain integration, KYC, ETL transaction processing & analytics. World\'s-first on-chain Shariah-compliant Mudarabah smart contract platform; $2M pilot program, 2,600+ waitlist users.',
+            'Shipped @TonchemyBot — a Telegram mini-app game built from scratch on TON; wrote smart contracts (Func) for minting/burning NFTs & jettons; grew to ~12k MAU / ~240k registered users.',
+            'Built Unspent.io — portfolio-tracking dApp across EVM/BTC/Cosmos; integrated CEX APIs (Binance, OKX) and OpenAI/GPT-4 for portfolio forecasting; Coinbase payments and watchlists via CoinGecko/CMC.',
+          ],
+          stack: 'React, Next.js, TypeScript, Node.js, Wagmi/Ethers/Viem, Solana/web3.js, Anchor/Codama, Cosmos SDK, TON/Func, Turnkey, GCP/AWS',
+        },
+      ],
+    },
+    {
       company: 'TotalSig (Self-funded Startup)',
       roles: [
         {
@@ -131,11 +135,11 @@ export const resumeData = {
           period: 'May 2023 — Oct 2023',
           location: 'Tallinn, Estonia',
           highlights: [
-            'Architected and built a non-custodial, multi-signature browser wallet from scratch, supporting Bitcoin, Ethereum, Tron, BSC, and Doge.',
-            'Engineered core wallet functionality using React and ManifestV3, enabling dApp interactions with multi-sig transactions for all EVM-based chains.',
-            'Implemented cryptographic functions using secp256k1/ecdsa for secure cross-client signature approvals.',
+            'Architected and built a non-custodial, multi-signature browser wallet (extension) from scratch, supporting Bitcoin, Ethereum, Tron, BSC, and Doge.',
+            'Engineered core wallet functionality using React and Manifest V3, enabling dApp interactions with multi-sig transactions for all EVM-based chains.',
+            'Implemented cryptographic functions using secp256k1/ECDSA for secure cross-client signature approvals.',
           ],
-          stack: 'React, Web3, ManifestV3, Node.js',
+          stack: 'React, Web3, Manifest V3, Node.js',
         },
       ],
     },
@@ -144,13 +148,13 @@ export const resumeData = {
       roles: [
         {
           title: 'Senior Frontend Developer, Blockchain, Web3 Wallets',
-          period: 'Dec 2021 — May 2023',
-          location: 'London, UK',
+          period: 'Apr 2022 — May 2023',
+          location: 'Greater London, UK',
           highlights: [
-            'Engineered and integrated support for multiple new blockchains (THORChain, Fantom) into the wallet, adding features for LP tokens and transaction signing.',
-            'Reverse-engineered major DeFi protocols (Uniswap, SushiSwap, LayerZero, Wormhole) to build a proprietary in-wallet swap aggregator.',
-            'Led the migration of the browser extension from Manifest V2 to V3.',
-            'Developed a standalone library for integrating multiple wallet providers into dApps, simplifying the connection process for developers.',
+            'Integrated multiple new chains (THORChain, Fantom), LP tokens, and transaction signing into the multichain wallet / browser extension.',
+            'Reverse-engineered Uniswap, SushiSwap, LayerZero, and Wormhole to build an in-wallet swap aggregator.',
+            'Led the Manifest V2 → V3 migration for the extension.',
+            'Built a standalone multi-wallet connector library for dApps (HW connections, address generation, signing, indexers, nonce management).',
           ],
         },
       ],
@@ -252,6 +256,14 @@ export const resumeData = {
   ] as ExperienceEntry[],
 
   skills: [
+    {
+      category: 'AI & LLM Engineering',
+      skills: [
+        'AI Agents', 'RAG', 'LangChain', 'MCP', 'Ollama', 'Hugging Face',
+        'OpenAI / GPT-4', 'Llama', 'LLM Decision Layers', 'Agent Pipelines',
+        'Vector Search', 'Prompt Engineering',
+      ],
+    },
     {
       category: 'Blockchain & Web3',
       skills: [
