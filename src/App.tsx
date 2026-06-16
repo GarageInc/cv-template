@@ -97,7 +97,9 @@ function App() {
         {/* Professional Summary */}
         <section className="doc-section" id="summary">
           <h2 className="doc-section-title">Professional Summary</h2>
-          <p className="doc-summary">{resumeData.summary}</p>
+          {resumeData.summary.map((para, i) => (
+            <p key={i} className="doc-summary">{para}</p>
+          ))}
           <ul className="doc-highlights">
             {resumeData.highlights.map((h, i) => (
               <li key={i}>{h}</li>

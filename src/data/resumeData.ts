@@ -30,7 +30,7 @@ export interface Achievement {
 export const resumeData = {
   name: 'Rinat Fihtengolts',
   title: 'AI RAG & Blockchain Engineer | LLM, LangChain, MCP | Rust · TypeScript · Solana/EVM/Cosmos/BTC/Monero/Tron | DeFi, Trading Bots, Smart Contracts · Hands-on dev',
-  location: 'Moscow, Russia',
+  location: 'Dubai, UAE',
 
   contact: {
     telegram: 'https://t.me/rfihtengolts',
@@ -40,8 +40,11 @@ export const resumeData = {
     github: 'https://github.com/GarageInc',
   },
 
-  summary:
-    'Hands-on engineer with 12+ years in software and 8 years in Web3, building Web3/AI/trading agent systems on top of DeFi infrastructure — combining on-chain execution with LLM-driven decision layers. RAG: parse data, decide, fetch context, act (buy/sell/notify), and loop on triggers — agent pipelines, not scripts — working hands-on with LangChain, MCP, Ollama, Hugging Face, and OpenAI for data processing and autonomous agents. Shipped: Ankr, Haqq Network, XDEFI — hundreds of thousands of infrastructure users; @ShogunSwapBot / @ShogunTradingBot — Solana + EVM trading bot scaled to 50,000+ users with a 3x performance gain by replacing third-party APIs with direct RPC calls; SilentSwap — private cross-chain swaps, $6M+ volume; white-label CEX/DEX platforms, swap apps, SDKs, and cross-chain dApps — scratch to production. Chains: Solana, Ethereum/L2, Cosmos, Tron, Bitcoin (PSBT), Monero. Integrations: Uniswap, Jupiter, Raydium, 1inch, deBridge, Wormhole. Also a quant/algorithmic trader (spot, perps): CeFi low-latency, DeFi MEV and liquidity providing. Ship fast and always in support — Results-Driven Development.',
+  summary: [
+    'Hands-on engineer with 12+ years in software and 8 years in Web3. I build AI agent systems on top of DeFi infrastructure, pairing on-chain execution with LLM-driven decision layers that parse data, decide, fetch context, and act — buy, sell, or notify — then loop on new triggers. Day to day I work directly with RAG, LangChain, MCP, Ollama, Hugging Face, and OpenAI.',
+    'I know DeFi from the inside, as both user and builder: trading bots, swap apps, SDKs, and white-label CEX/DEX platforms shipped from scratch to production. Chains span Solana, Ethereum/L2, Cosmos, Tron, Bitcoin, and Monero, with integrations across Uniswap, Jupiter, Raydium, 1inch, deBridge, and Wormhole.',
+    'I also trade actively in spot and perps — CeFi low-latency execution, DeFi MEV, and liquidity providing. I ship fast, iterate, and stay in support — Results-Driven Development.',
+  ],
 
   highlights: [
     'Building production AI agents that parse on-chain & market data, decide, fetch context, and trigger actions (buy/sell/notify) — RAG + LangChain + MCP pipelines, not scripts',
